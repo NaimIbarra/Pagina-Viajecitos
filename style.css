@@ -1,16 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-nav {
+header {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: center;
+  padding: 50px 20px;
+  justify-content: space-between;
   align-items: center;
   background-color: aquamarine;
-  text-align: center;
+}
+header h1 {
+  font-size: 50px;
+  font-family: "Nabla", cursive;
+}
+header button {
+  cursor: pointer;
+  background-color: #03c3f8;
+  width: 160px;
+  height: 60px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #24262b;
+}
+header i {
+  padding-right: 10px;
+}
+.boton-iniciar-sesion {
+  float: right;
 }
 h1 {
   text-align: center;
@@ -26,7 +47,7 @@ h2 {
   margin-top: 50px;
 }
 #busqueda {
-  height: 55px;
+  height: 75px;
   width: 45vw;
   border: 3px solid black;
   border-radius: 55px;
