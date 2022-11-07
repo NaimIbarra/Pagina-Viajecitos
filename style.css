@@ -26,6 +26,7 @@ header button {
   transition: 0.5s;
 }
 button:hover {
+  cursor: pointer;
   background-color: #24262b;
 }
 header i {
@@ -91,7 +92,6 @@ h2 {
   width: 100%;
   display: flex;
 }
-/*
 .coleccion-playa {
   background-image: url(img/playa\ .jpg);
   background-position: center;
@@ -111,7 +111,7 @@ h2 {
   background-image: url(img/150122-turistas-observando-ceta-ceos-en-las-costas-del-sur-de-la-gomera-martin-siepmann-age.jpeg);
   background-position: center;
   background-size: cover;
-}*/
+}
 .boton {
   margin-top: 30px;
   text-align: center;
@@ -337,11 +337,89 @@ input[type="submit"] {
   letter-spacing: 3px;
 }
 
+/* --- --- CAROUSEL --- --- */
+.deslizamiento img {
+  vertical-align: top;
+  margin-right: 20px;
+  width: 50%;
+  max-width: 550px;
+}
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -30px;
+}
+
+.carousel__siguiente {
+  right: -30px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.2;
+  border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1;
+}
+
 /*responsive*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    padding: 40px 0;
+  }
+
+  .contenido-principal {
+    flex-direction: column;
+  }
+
+  .contenido-principal > * {
+    width: 100%;
   }
 }
 @media (max-width: 574px) {
