@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -17,6 +19,9 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
@@ -28,6 +33,9 @@
       </div>
       <div class="logo">
         <a href="index.html"><h1>Viajecitos</h1></a>
+      </div>
+      <div class="icono-busqueda">
+        <i class="fa fa-search" aria-hidden="true"></i>
       </div>
       <div class="boton-iniciar-sesion">
         <a href="#">
@@ -64,7 +72,40 @@
     </div>
     <main>
       <h1>Ofertas</h1>
-      <div class="deslizamiento">
+      <section class="Destacado" id="Destacado">
+        <div class="swiper Destacado-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="#"
+                  ><img
+                    src="img/montaña-vegetacion-min-e1533763005248.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="content">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="#"
+                  ><img
+                    src="img/montaña-vegetacion-min-e1533763005248.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="content">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  <div class="deslizamiento">
         <div class="cell">
           <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
           <div class="contenido">
@@ -141,6 +182,7 @@
           <a href="#" class="btn">Reservar ahora</a>
         </div>
       </div>
+    -->
       <div>
         <h1>Los mejores paquetes</h1>
         <div class="grid">
@@ -271,6 +313,8 @@
       </div>
     </main>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
     <script type="text/javascript">
       $(".deslizamiento").flickity({
         // options
