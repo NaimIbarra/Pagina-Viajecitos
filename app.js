@@ -1,4 +1,4 @@
-var swiper = new Swiper(".Destacado-slider", {
+var swiper = new Swiper(".carrousel-slider", {
   slidesPerView: 3,
   spaceBetween: 80,
   centeredSlides: true,

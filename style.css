@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 
-.Destacado {
+.Ofertas {
   position: relative;
   padding: 0 40px;
 }
 
-.Destacado .box {
+.Ofertas .box {
+  position: relative;
   width: 150px;
   height: 300px;
 }
@@ -20,16 +21,6 @@
   width: 420px;
   height: 300px;
 }
-
-.DC {
-  padding: 5rem;
-}
-
-.DC .box {
-  width: 250px;
-  height: 500px;
-}
-
 /*Encabezado*/
 .header {
   display: flex;
@@ -42,6 +33,7 @@
   padding: 0 25px;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 .btn-menu label {
   color: black;
@@ -63,7 +55,7 @@
   font-size: 18px;
   cursor: pointer;
   background: linear-gradient(
-    141deg,
+    90deg,
     rgba(182, 230, 0, 1) 14%,
     rgba(240, 246, 3, 1) 44%,
     rgba(0, 212, 255, 1) 77%
@@ -71,9 +63,6 @@
   width: 160px;
   height: 60px;
   transition: 0.5s;
-}
-button:hover {
-  background-color: #24262b;
 }
 .header i {
   padding-right: 10px;
@@ -92,6 +81,7 @@ button:hover {
 }
 .container-menu {
   position: fixed;
+  z-index: 999;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100vh;
@@ -110,7 +100,7 @@ button:hover {
   max-width: 250px;
   background: #1c1c1c;
   height: 100vh;
-  position: relative;
+  position: absolute;
   transition: all 500ms ease;
   transform: translateX(-100%);
 }
@@ -192,11 +182,10 @@ h2 {
 }
 /*Colecciones*/
 .grid {
-  border: 1px solid black;
+  border: 2px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
-  background-color: red;
 }
 .grid > div {
   border: 1px solid black;
@@ -243,7 +232,7 @@ h2 {
 }
 .paquete-titulo h4 {
   color: white;
-  font-size: 45px;
+  font-size: 55px;
   font-family: sans-serif;
 }
 .boton-coleccion {
@@ -252,9 +241,15 @@ h2 {
 }
 button {
   cursor: pointer;
-  width: 120px;
-  height: 40px;
+  width: 140px;
+  height: 50px;
   font-size: 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.boton-coleccion button:hover {
+  background-color: #24262b;
+  border: skyblue;
 }
 
 /*Carrousel 2*/
@@ -401,13 +396,13 @@ h5 {
 }
 .wrapper {
   font-family: sans-serif;
-  margin: 70px auto;
+  margin: 220px auto 0 auto;
   padding: 20px;
   background: #e7e7e7;
   border-radius: 5px;
   width: 30%;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 2.5s ease-in-out;
 }
 .wrapper h2 {
   margin-top: 0;
@@ -482,9 +477,12 @@ input[type="submit"] {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 871px) {
   body {
     padding: 0px 0;
+  }
+  .wrapper {
+    width: 80%;
   }
 
   .contenido-principal {
@@ -503,7 +501,7 @@ input[type="submit"] {
     display: none;
   }
   .header .icono-busqueda {
-    display: block;
+    display: flex;
   }
   #barra-busqueda {
     display: none;
