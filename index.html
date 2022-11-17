@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -14,18 +16,53 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <i class="fa fa-bars" aria-hidden="true"></i>
-      <h1>Viajecitos</h1>
+    <header class="header">
+      <div class="btn-menu">
+        <label for="btn-menu">☰</label>
+      </div>
+      <div class="logo">
+        <a href="index.html"><h1>Viajecitos</h1></a>
+      </div>
+      <div class="icono-busqueda">
+        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+      </div>
       <div class="boton-iniciar-sesion">
-        <button>
-          <i class="fa fa-user" aria-hidden="true"></i>Iniciar Sesion
-        </button>
+        <a href="#">
+          <button>
+            <i class="fa fa-user" aria-hidden="true"></i>Iniciar Sesion
+          </button>
+        </a>
       </div>
     </header>
+    <div class="capa"></div>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="#"
+            >Iniciar Sesion <i class="fa fa-user-circle" aria-hidden="true"></i
+          ></a>
+          <a href="#">Vuelos <i class="fa fa-plane" aria-hidden="true"></i></a>
+          <a href="#">Cruceros<i class="fa fa-ship" aria-hidden="true"></i></a>
+          <a href="#">Paquetes<i class="fa fa-gift" aria-hidden="true"></i></a>
+          <a href="#"
+            >Actividades<i class="fa fa-map" aria-hidden="true"></i
+          ></a>
+        </nav>
+        <label for="btn-menu">✖️</label>
+      </div>
+    </div>
     <div id="barra-busqueda">
       <input
         type="search"
@@ -33,111 +70,277 @@
         id="busqueda"
         placeholder="Buscar..." />
     </div>
-    <h1>Ofertas</h1>
-    <div class="deslizamiento">
-      <div class="div-deslizamiento">DIV-DESLIZAMIENTO</div>
-      <div class="div-deslizamiento">DIV-DESLIZAMIENTO</div>
-      <div class="div-deslizamiento">DIV-DESLIZAMIENTO</div>
-    </div>
-    <div>
-      <h1>Los mejores paquetes</h1>
-      <div class="grid">
-        <div class="coleccion">
-          <a href="#"">
-            <img src="img/playa .jpg" />
-          </a>
-        </div>
-        <div class="coleccion">
-          <a href="#"">
-            <img src="img/playa .jpg" />
-          </a>
-        </div>
-        <div class="coleccion">
-          <a href="#"">
-            <img src="img/playa .jpg" />
-          </a>
-        </div>
-        <div class="coleccion">
-          <a href="#"">
-            <img src="img/playa .jpg" />
-          </a>
-        </div>
-      </div>
-      <div class="boton">
-        <button onclick="location.href='#'">Mas...</button>
-      </div>
-      <h2>Viaja por Argentina...</h2>
-      <div class="argentina-precios">
-        <div class="div-argentina">DIV-ARGENTINA</div>
-        <div class="div-argentina">DIV-ARGENTINA</div>
-        <div class="div-argentina">DIV-ARGENTINA</div>
-      </div>
-      <h2>Te podria interesar...</h2>
-      <div class="interesar">
-        <div class="div-interesar">DIV-INTERESAR</div>
-        <div class="div-interesar">DIV-INTERESAR</div>
-        <div class="div-interesar">DIV-INTERESAR</div>
-      </div>
-      <div class="box">
-        <a class="button" href="#divOne">Contactenos</a>
-      </div>
-      <div class="overlay" id="divOne">
-        <div class="wrapper">
-          <h2>Contactese con nosotros</h2>
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <div class="container-form">
-              <form>
-                <label>Nombre</label>
-                <input placeholder="Tu nombre..." type="text" required />
-                <label>Apellido</label>
-                <input placeholder="Tu apellido..." type="text" required />
-                <label>Comentario</label>
-                <textarea iplaceholder="Escribe algo..."></textarea>
-                <input type="submit" value="Submit" />
-              </form>
+    <main>
+      <h1>Ofertas</h1>
+      <section class="Ofertas" id="Ofertas">
+        <div class="swiper carrousel-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="#"
+                  ><img
+                    src="img/temporal-varelawebp.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="contenido">
+                <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Florencio Varela</h4>
+                <div class="estrellas">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                <!--- <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>-->
+                </div>
+                <div class="precio">2 <span> <img src="img/79-798590_orange-fruit-icon-png.png" alt=""></span></div>
+              </div>
+              <a href="#" class="btn">Reservar ahora</a>
             </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="#"
+                  ><img
+                    src="img/boxer.jfif"
+                    alt=""
+                /></a>
+              </div>
+              <div class="contenido">
+              <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Boxer Hamburgueseria</h4>
+              <div class="estrellas">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half" aria-hidden="true"></i>
+              <!--- <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>-->
+              </div>
+              <div class="precio">2 <span> <img src="img/79-798590_orange-fruit-icon-png.png" alt=""></span></div>
+            </div>
+            <a href="#" class="btn">Reservar ahora</a>
+          </div>
+
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <h4>Productos</h4>
-              <ul>
-                <li><a href="#">Hoteles</a></li>
-                <li><a href="#">Cruceros</a></li>
-                <li><a href="#">Vuelos</a></li>
-                <li><a href="#">Ofertas</a></li>
-              </ul>
+     </section>
+      <!--  <div class="deslizamiento">
+        <div class="cell">
+          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          <div class="contenido">
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
+            <div class="estrellas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <div class="footer-col">
-              <h4>Informacion</h4>
-              <ul>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Formas de pago</a></li>
-                <li><a href="#">Estado de la orden</a></li>
-              </ul>
+            <div class="precio">$100.00 <span>$120.00</span></div>
+          </div>
+          <a href="#" class="btn">Reservar ahora</a>
+        </div>
+        <div class="cell">
+          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          <div class="contenido">
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
+            <div class="estrellas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <div class="footer-col">
-              <h4>Contacto</h4>
-              <ul>
-                <li><a href="#">+54 11-6545-6789</a></li>
-              </ul>
+            <div class="precio">$100.00 <span>$120.00</span></div>
+          </div>
+          <a href="#" class="btn">Reservar ahora</a>
+        </div>
+        <div class="cell">
+          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          <div class="contenido">
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
+            <div class="estrellas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <div class="footer-col">
-              <h4>Redes Sociales</h4>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="precio">$100.00 <span>$120.00</span></div>
+          </div>
+          <a href="#" class="btn">Reservar ahora</a>
+        </div>
+        <div class="cell">
+          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          <div class="contenido">
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
+            <div class="estrellas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="precio">$100.00 <span>$120.00</span></div>
+          </div>
+          <a href="#" class="btn">Reservar ahora</a>
+        </div>
+        <div class="cell">
+          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          <div class="contenido">
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
+            <div class="estrellas">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="precio">$100.00 <span>$120.00</span></div>
+          </div>
+          <a href="#" class="btn">Reservar ahora</a>
+        </div>
+      </div>
+    -->
+      <div>
+        <h1>Los mejores paquetes</h1>
+        <div class="grid">
+          <div class="coleccion-playa">
+            <a href="#"> </a>
+            <div class="paquete-titulo">
+              <h4>Playas</h4>
+            </div>
+          </div>
+          <div class="coleccion-montaña">
+            <a href="#"> </a>
+            <div class="paquete-titulo">
+              <h4>Montañas</h4>
+            </div>
+          </div>
+          <div class="coleccion-cruceros">
+            <a href="#"></a>
+            <div class="paquete-titulo">
+              <h4>Cruceros</h4>
+            </div>
+          </div>
+          <div class="coleccion-vistas">
+            <a href="#"> </a>
+            <div class="paquete-titulo">
+              <h4>Vistas</h4>
+            </div>
+          </div>
+        </div>
+        <div class="boton-coleccion">
+          <button onclick="location.href='#'">Mas...</button>
+        </div>
+        <h2>Viaja por Argentina...</h2>
+        <div class="deslizamiento">
+          <div class="cell">
+            <img src="img/boxer.jfif" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+        </div>
+        <h2>Te podria interesar...</h2>
+        <div class="deslizamiento">
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <a class="button" href="#divOne">Contactenos</a>
+        </div>
+        <div class="overlay" id="divOne">
+          <div class="wrapper">
+            <h2>Contactese con nosotros</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              <div class="container-form">
+                <form>
+                  <label>Nombre</label>
+                  <input placeholder="Tu nombre..." type="text" required />
+                  <label>Apellido</label>
+                  <input placeholder="Tu apellido..." type="text" required />
+                  <label>Comentario</label>
+                  <textarea iplaceholder="Escribe algo..."></textarea>
+                  <input type="submit" value="Submit" />
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>Productos</h4>
+                <ul>
+                  <li><a href="#">Hoteles</a></li>
+                  <li><a href="#">Cruceros</a></li>
+                  <li><a href="#">Vuelos</a></li>
+                  <li><a href="#">Ofertas</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Informacion</h4>
+                <ul>
+                  <li><a href="#">Preguntas Frecuentes</a></li>
+                  <li><a href="#">Formas de pago</a></li>
+                  <li><a href="#">Estado de la orden</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                  <li><a href="#">+54 11-6545-6789</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+      $(".deslizamiento").flickity({
+        // options
+        cellAlign: "center",
+        wrapAround: true,
+        freeScroll: true,
+      });
+    </script>
   </body>
 </html>
