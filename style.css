@@ -144,6 +144,12 @@ h2 {
   font-family: "Public Sans", sans-serif;
   margin: 30px 10px;
 }
+h4 {
+  font-size: 20px;
+}
+.precio img {
+  width: 20px;
+}
 #barra-busqueda {
   display: flex;
   justify-content: center;
@@ -165,7 +171,6 @@ h2 {
   height: 350px;
   margin: 0 35px;
   overflow: hidden;
-  border-radius: 8px;
 }
 .cell img {
   width: 80%;
@@ -179,6 +184,9 @@ h2 {
 .deslizamiento .contenido p {
   font-size: 1.7rem;
   color: #82807f;
+}
+.contenido i {
+  color: orange;
 }
 /*Colecciones*/
 .grid {
@@ -210,19 +218,19 @@ h2 {
   background-size: cover;
 }
 .coleccion-playa {
-  background-image: url(img/playa\ .jpg);
+  background-image: url(img/0814riodelaplata-1001959.jpg);
   filter: brightness(65%);
 }
 .coleccion-montaña {
-  background-image: url(img/montaña-vegetacion-min-e1533763005248.jpg);
+  background-image: url(img/kk.jpg);
   filter: brightness(65%);
 }
 .coleccion-cruceros {
-  background-image: url(img/crucero-arresto.jpg);
+  background-image: url(img/fitito.jpg);
   filter: brightness(65%);
 }
 .coleccion-vistas {
-  background-image: url(img/150122-turistas-observando-ceta-ceos-en-las-costas-del-sur-de-la-gomera-martin-siepmann-age.jpeg);
+  background-image: url(img/t1.jpg);
   filter: brightness(65%);
 }
 .paquete-titulo {
@@ -483,6 +491,10 @@ input[type="submit"] {
   }
   .wrapper {
     width: 80%;
+  }
+
+  .grid {
+    grid-template-columns: 100%;
   }
 
   .contenido-principal {
