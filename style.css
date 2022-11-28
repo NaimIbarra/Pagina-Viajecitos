@@ -1,25 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.Ofertas {
-  position: relative;
-  padding: 0 40px;
-}
-
-.Ofertas .box {
-  position: relative;
-  width: 150px;
-  height: 300px;
-}
-
-.box img {
-  width: 420px;
-  height: 300px;
 }
 /*Encabezado*/
 .header {
@@ -45,7 +30,7 @@
 }
 .logo h1 {
   font-family: "Nabla";
-  font-size: 48px;
+  font-size: 58px;
   margin: 0 50px;
 }
 .header button {
@@ -54,12 +39,7 @@
   font-family: sans-serif;
   font-size: 18px;
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgba(182, 230, 0, 1) 14%,
-    rgba(240, 246, 3, 1) 44%,
-    rgba(0, 212, 255, 1) 77%
-  );
+  background-color: #4fcafe;
   width: 160px;
   height: 60px;
   transition: 0.5s;
@@ -124,6 +104,7 @@
   background: #1f1f1f;
 }
 .cont-menu nav i {
+  font-size: 20px;
   float: right;
 }
 .cont-menu label {
@@ -140,9 +121,9 @@ main h1 {
   text-align: center;
   margin: 50px 0;
 }
-h2 {
+.titulos-carrousel h2 {
   font-family: "Public Sans", sans-serif;
-  margin: 30px 10px;
+  margin: 50px 10px;
 }
 h4 {
   font-size: 20px;
@@ -165,28 +146,6 @@ h4 {
   font-size: 25px;
   padding-left: 23px;
   outline: none;
-}
-/*CARROUSEL*/
-.cell {
-  height: 350px;
-  margin: 0 35px;
-  overflow: hidden;
-}
-.cell img {
-  width: 80%;
-  height: 350px;
-  object-fit: cover;
-}
-.deslizamiento .contenido h3 {
-  font-size: 2rem;
-  color: #1c1c1c;
-}
-.deslizamiento .contenido p {
-  font-size: 1.7rem;
-  color: #82807f;
-}
-.contenido i {
-  color: orange;
 }
 /*Colecciones*/
 .grid {
@@ -218,19 +177,19 @@ h4 {
   background-size: cover;
 }
 .coleccion-playa {
-  background-image: url(img/0814riodelaplata-1001959.jpg);
+  background-image: url(img/playa\ .jpg);
   filter: brightness(65%);
 }
 .coleccion-montaña {
-  background-image: url(img/kk.jpg);
+  background-image: url(img/montaña.jpg);
   filter: brightness(65%);
 }
 .coleccion-cruceros {
-  background-image: url(img/fitito.jpg);
+  background-image: url(img/crucero-arresto.jpg);
   filter: brightness(65%);
 }
 .coleccion-vistas {
-  background-image: url(img/t1.jpg);
+  background-image: url(img/Vistas.jpeg);
   filter: brightness(65%);
 }
 .paquete-titulo {
@@ -247,52 +206,18 @@ h4 {
   margin-top: 30px;
   text-align: center;
 }
-button {
+.boton-coleccion button {
   cursor: pointer;
-  width: 140px;
-  height: 50px;
+  width: 180px;
+  height: 60px;
   font-size: 20px;
-  border: 2px solid black;
+  color: white;
+  background-color: rgb(61, 63, 60);
   border-radius: 30px;
 }
 .boton-coleccion button:hover {
   background-color: #24262b;
   border: skyblue;
-}
-
-/*Carrousel 2*/
-.argentina-precios {
-  width: 100%;
-  border: 1px solid black;
-  background-image: url(img/obelisco-buenos-aires-getty.jpg);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.div-argentina {
-  background-color: purple;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  border: 1px solid black;
-}
-.interesar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.div-interesar {
-  background-color: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  border: 1px solid black;
 }
 /*Footer*/
 .contenedor {
@@ -472,17 +397,17 @@ input[type="submit"] {
   margin: auto;
 }
 /*responsive*/
+@media (max-width: 1150px) {
+  .wrapper-slider .container .top {
+    height: 140px;
+    width: 80%;
+  }
+}
 @media (max-width: 930px) {
   /*Para que el menu desplegable se vea bien a lo largo*/
   .container-menu,
   .cont-menu {
     height: 120%;
-  }
-}
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 871px) {
@@ -505,7 +430,13 @@ input[type="submit"] {
     width: 100%;
   }
 }
-@media (max-width: 574px) {
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 616px) {
   .footer-col {
     width: 100%;
   }
@@ -518,4 +449,103 @@ input[type="submit"] {
   #barra-busqueda {
     display: none;
   }
+  main h1 {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 42px;
+    margin: 0 20px;
+  }
+}
+/*Carrousel*/
+.details .estrellas i {
+  padding: 10px 0;
+  color: orange;
+  font-size: 20px;
+}
+.details p {
+  font-size: 22px;
+}
+.products_body {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+.wrapper-slider {
+  cursor: grab;
+  width: 350px;
+  height: 500px;
+  background: transparent;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  transform: scale(0.93);
+  transition: box-shadow 0.5s, transform 0.5s;
+  z-index: 1000;
+}
+.wrapper-slider:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-slider .container {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-slider .container .top {
+  height: 340px;
+  width: 100%;
+  background-size: 100%;
+}
+.wrapper-slider .container .bottom {
+  width: 100%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+
+.wrapper-slider .container .bottom .left {
+  height: 100%;
+  width: 100%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+  font-family: "Inconsolata", monospace;
+}
+
+.wrapper-slider .container .bottom .left .details {
+  padding: 10px 0 10px 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+
+.wrapper-slider .container .bottom .left .details .txt_products {
+  font-size: 28px;
+}
+
+.wrapper-slider .container .bottom .left .buy {
+  float: right;
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapper-slider .container .bottom .left .buy i {
+  font-size: 30px;
+  padding: 30px;
+  color: #0781b6;
+  transition: transform 0.5s;
+}
+
+.wrapper-slider .container .bottom .left .buy:hover i {
+  transform: rotate(360deg);
+}
+.slick-dots button {
+  display: none;
 }

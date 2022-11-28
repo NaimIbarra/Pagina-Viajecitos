@@ -22,8 +22,13 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -71,137 +76,135 @@
         placeholder="Buscar..." />
     </div>
     <main>
-      <h1>Ofertas</h1>
-      <section class="Ofertas" id="Ofertas">
-        <div class="swiper carrousel-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="box">
-                <a href="#"
-                  ><img
-                    src="img/temporal-varelawebp.jpg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="contenido">
-                <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Florencio Varela</h4>
-                <div class="estrellas">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-half" aria-hidden="true"></i>
-                <!--- <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>-->
+      <h1 id="ofertas">Ofertas</h1>
+      <div class="products_body center">
+        <div class="wrapper-slider">
+          <div class="container">
+            <img class="top" src="img/machu-picchu.jpg" alt="" />
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <h2 class="txt_products">Machu Picchu</h2>
+                  <div class="estrellas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <p>$65.000 - <del>$120.000</del></p>
                 </div>
-                <div class="precio">2 <span> <img src="img/79-798590_orange-fruit-icon-png.png" alt=""></span></div>
+                <div class="buy">
+                  <a href="#">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
               </div>
-              <a href="#" class="btn">Reservar ahora</a>
             </div>
-            <div class="swiper-slide">
-              <div class="box">
-                <a href="#"
-                  ><img
-                    src="img/boxer.jfif"
-                    alt=""
-                /></a>
-              </div>
-              <div class="contenido">
-              <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Boxer Hamburgueseria</h4>
-              <div class="estrellas">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-              <!--- <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>-->
-              </div>
-              <div class="precio">2 <span> <img src="img/79-798590_orange-fruit-icon-png.png" alt=""></span></div>
-            </div>
-            <a href="#" class="btn">Reservar ahora</a>
           </div>
+        </div>
 
+        <div class="wrapper-slider">
+          <div class="container">
+            <img class="top" src="img/orlando.jpg" alt="" />
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <h2 class="txt_products">Orlando</h2>
+                  <div class="estrellas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <p>$110.000 - <del>$150.000</del></p>
+                </div>
+                <div class="buy">
+                  <a href="#">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-slider">
+          <div class="container">
+            <img class="top" src="img/amsterdam.jpg" alt="" />
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <h2 class="txt_products">Amsterdam</h2>
+                  <div class="estrellas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <p>$80.000 - <del>$95.000</del></p>
+                </div>
+                <div class="buy">
+                  <a href="#">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-slider">
+          <div class="container">
+            <img class="top" src="img/paris.jpg" alt="" />
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <h2 class="txt_products">Paris</h2>
+                  <div class="estrellas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                  </div>
+                  <p>$120.000 - <del>$180.000</del></p>
+                </div>
+                <div class="buy">
+                  <a href="#">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-slider">
+          <div class="container">
+            <img class="top" src="img/rio-de-janeiro.jpg" alt="" />
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <h2 class="txt_products">Rio de Janeiro</h2>
+                  <div class="estrellas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <p>$95.000 -<del>$140.000</del></p>
+                </div>
+                <div class="buy">
+                  <a href="#">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-     </section>
-      <!--  <div class="deslizamiento">
-        <div class="cell">
-          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
-          <div class="contenido">
-            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
-            <div class="estrellas">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="precio">$100.00 <span>$120.00</span></div>
-          </div>
-          <a href="#" class="btn">Reservar ahora</a>
-        </div>
-        <div class="cell">
-          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
-          <div class="contenido">
-            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
-            <div class="estrellas">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="precio">$100.00 <span>$120.00</span></div>
-          </div>
-          <a href="#" class="btn">Reservar ahora</a>
-        </div>
-        <div class="cell">
-          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
-          <div class="contenido">
-            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
-            <div class="estrellas">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="precio">$100.00 <span>$120.00</span></div>
-          </div>
-          <a href="#" class="btn">Reservar ahora</a>
-        </div>
-        <div class="cell">
-          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
-          <div class="contenido">
-            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
-            <div class="estrellas">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="precio">$100.00 <span>$120.00</span></div>
-          </div>
-          <a href="#" class="btn">Reservar ahora</a>
-        </div>
-        <div class="cell">
-          <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
-          <div class="contenido">
-            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Hawai</h3>
-            <div class="estrellas">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="precio">$100.00 <span>$120.00</span></div>
-          </div>
-          <a href="#" class="btn">Reservar ahora</a>
-        </div>
-      </div>
-    -->
       <div>
         <h1>Los mejores paquetes</h1>
         <div class="grid">
@@ -233,42 +236,268 @@
         <div class="boton-coleccion">
           <button onclick="location.href='#'">Mas...</button>
         </div>
-        <h2>Viaja por Argentina...</h2>
-        <div class="deslizamiento">
-          <div class="cell">
-            <img src="img/boxer.jfif" alt="" />
+        <div class="titulos-carrousel">
+          <h2>Viaja por Argentina</h2>
+        </div>
+        <div class="products_body center">
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/buenos-aires.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Buenos Aires</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/jujuy_13.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Jujuy</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/cordoba.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Cordoba</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/bariloche.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Bariloche</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/cataratas.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Misiones</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <h2>Te podria interesar...</h2>
-        <div class="deslizamiento">
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+        <div class="titulos-carrousel">
+          <h2>Te podria interesar...</h2>
+        </div>
+        <div class="products_body center">
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/barcelona.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Barcelona</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/moscu.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Moscú</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/cardiff.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Cardiff</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/berlin.jpg" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Berlín</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell">
-            <img src="img/montaña-vegetacion-min-e1533763005248.jpg" alt="" />
+
+          <div class="wrapper-slider">
+            <div class="container">
+              <img class="top" src="img/sydney" alt="" />
+              <div class="bottom">
+                <div class="left">
+                  <div class="details">
+                    <h2 class="txt_products">Sydney</h2>
+                    <div class="estrellas">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>$90.000 - $120.000</p>
+                  </div>
+                  <div class="buy">
+                    <a href="#">
+                      <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!--Pop Up Contacto-->
         <div class="box">
           <a class="button" href="#divOne">Contactenos</a>
         </div>
@@ -331,16 +560,12 @@
         </footer>
       </div>
     </main>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
-    <script type="text/javascript">
-      $(".deslizamiento").flickity({
-        // options
-        cellAlign: "center",
-        wrapAround: true,
-        freeScroll: true,
-      });
-    </script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--CDN-->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="carusel.js"></script>
   </body>
 </html>
