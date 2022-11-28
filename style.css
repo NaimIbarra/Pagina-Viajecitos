@@ -149,40 +149,30 @@ h4 {
   outline: none;
 }
 /*Colecciones*/
-.grid {
-  border: 2px solid black;
+.contenedor-grid {
+  width: 100%;
+  margin: auto;
+}
+img {
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+}
+.persona__columna {
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+}
+.grid .contenedor-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  text-align: center;
-}
-.grid > div {
-  border: 1px solid black;
-  height: 300px;
-  padding: 100px;
-}
-.coleccion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.coleccion img {
-  object-fit: cover;
-  width: 100%;
-  display: flex;
-}
-.coleccion-playa,
-.coleccion-montaña,
-.coleccion-cruceros,
-.coleccion-vistas {
-  background-position: center;
-  background-size: cover;
 }
 .coleccion-playa {
   background-image: url(img/playa\ .jpg);
   filter: brightness(65%);
 }
 .coleccion-montaña {
-  background-image: url(img/montaña.jpg);
+  background-image: url(img/montaña-vegetacion-min-e1533763005248.jpg);
   filter: brightness(65%);
 }
 .coleccion-cruceros {
@@ -190,7 +180,7 @@ h4 {
   filter: brightness(65%);
 }
 .coleccion-vistas {
-  background-image: url(img/Vistas.jpeg);
+  background-image: url(img/150122-turistas-observando-ceta-ceos-en-las-costas-del-sur-de-la-gomera-martin-siepmann-age.jpeg);
   filter: brightness(65%);
 }
 .paquete-titulo {
@@ -200,7 +190,7 @@ h4 {
 }
 .paquete-titulo h4 {
   color: white;
-  font-size: 55px;
+  font-size: 3em;
   font-family: sans-serif;
 }
 .boton-coleccion {
