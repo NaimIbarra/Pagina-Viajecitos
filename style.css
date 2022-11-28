@@ -148,13 +148,13 @@ h4 {
   padding-left: 23px;
   outline: none;
 }
-/*Colecciones*/
+/*Grid Colecciones*/
 .contenedor-grid {
   width: 100%;
   margin: auto;
 }
 img {
-  filter: brightness(50%);
+  filter: brightness(60%);
   height: 100%;
   width: 100%;
 }
@@ -162,35 +162,20 @@ img {
   position: relative;
   border: 1px solid black;
   width: 100%;
+  height: 400px;
 }
 .grid .contenedor-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.coleccion-playa {
-  background-image: url(img/playa\ .jpg);
-  filter: brightness(65%);
-}
-.coleccion-montaña {
-  background-image: url(img/montaña-vegetacion-min-e1533763005248.jpg);
-  filter: brightness(65%);
-}
-.coleccion-cruceros {
-  background-image: url(img/crucero-arresto.jpg);
-  filter: brightness(65%);
-}
-.coleccion-vistas {
-  background-image: url(img/150122-turistas-observando-ceta-ceos-en-las-costas-del-sur-de-la-gomera-martin-siepmann-age.jpeg);
-  filter: brightness(65%);
-}
 .paquete-titulo {
-  top: 70%;
+  top: 80%;
   left: 4.5%;
   position: absolute;
 }
 .paquete-titulo h4 {
   color: white;
-  font-size: 3em;
+  font-size: 48px;
   font-family: sans-serif;
 }
 .boton-coleccion {
@@ -398,6 +383,12 @@ input[type="submit"] {
   .cont-menu {
     height: 120%;
   }
+  .persona__columna {
+    height: 300px;
+  }
+  .paquete-titulo h4 {
+    font-size: 38px;
+  }
 }
 @media screen and (max-width: 871px) {
   body {
@@ -406,28 +397,28 @@ input[type="submit"] {
   .wrapper {
     width: 80%;
   }
-
-  .grid {
-    grid-template-columns: 100%;
-  }
-
-  .contenido-principal {
-    flex-direction: column;
-  }
-
-  .contenido-principal > * {
-    width: 100%;
-  }
 }
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
+  .paquete-titulo h4 {
+    font-size: 38px;
+  }
+  .grid .contenedor-grid {
+    grid-template-columns: 1fr;
+  }
+  .persona__columna {
+    height: 300px;
+  }
 }
 @media (max-width: 616px) {
   .footer-col {
     width: 100%;
+  }
+  .footer-col h4 {
+    margin-right: 80%;
   }
   .header button {
     display: none;
